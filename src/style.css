@@ -1,0 +1,41 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    background: url(../img/bg.jpg) repeat;
+    background-size: cover;
+
+    text-align: center;
+    font-weight: 400;
+    max-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: #000 2px 2px 5px;
+    word-spacing: 15px;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    text-shadow: #000 2px 2px 5px;
+}
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
