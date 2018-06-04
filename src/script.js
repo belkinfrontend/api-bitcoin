@@ -29,21 +29,32 @@ function getHistoryRate() {
             //document.getElementById("out").innerHTML = JSON.stringify(data.bpi);
             document.getElementById("out").innerHTML = "go to console =>";
 
+//            let newObj = Object.entries(data.bpi).slice(0,5).map(entry => {
+//               return entry
+//            } );
+//            
+//            console.log(newObj);
+
+
+            let keys = Object.keys(data.bpi)
+            let values = Object.values(data.bpi)
+            
+            //debugger;
 
 
             let ctx = document.getElementById('myChart').getContext('2d');
             let chart = new Chart(ctx, {
                 // The type of chart we want to create
                 type: 'line',
-
+               
                 // The data for our dataset
                 data: {
-                    labels: ["January", "February", "March", "April", "May", "June", "July"],
+                    labels: keys,
                     datasets: [{
                         label: "My First dataset",
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: [0, 10, 5, 2, 20, 30, 45],
+                        backgroundColor: '#17EA00',
+                        borderColor: '#212121',
+                        data: values,
                     }]
                 },
 

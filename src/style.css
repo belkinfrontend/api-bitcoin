@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 10px;
     font-size: 14px;
-    background: url(../img/bg.jpg) repeat;
-    background-size: cover;
+
+    background: -webkit-linear-gradient(96deg, rgb(239, 241, 238), rgb(241, 57, 250));
+    background: linear-gradient(96deg, rgb(239, 241, 238), rgb(241, 57, 250));
 
     text-align: center;
-    font-weight: 400;
-    max-height: 100vh;
+
+    background-size: cover;
+
 }
 
 h1 {
@@ -19,7 +21,11 @@ h1 {
     word-spacing: 15px;
 }
 
-
+input {
+    font-size: 2em;
+    border: none;
+    margin-top: 10px;
+}
 
 input:focus {
     outline: none;
