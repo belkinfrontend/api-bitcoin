@@ -51,7 +51,7 @@ function getHistoryRate() {
                 data: {
                     labels: keys,
                     datasets: [{
-                        label: "My First dataset",
+                        label: "Bitcoin",
                         backgroundColor: '#17EA00',
                         borderColor: '#212121',
                         data: values,
